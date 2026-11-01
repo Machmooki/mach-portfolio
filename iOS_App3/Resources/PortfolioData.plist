@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+
+<plist version="1.0">
+<dict>
+	<key>Profile</key>
+	<dict>
+		<key>Name</key>
+		<string>Mach Suwanpatikorn</string>
+		<key>Title</key>
+		<string>     </string>
+		<key>Introduction</key>
+		<string>:)</string>
+		<key>Education</key>
+		<array>
+			<string>Bachelor of Arts in Social Communication Innovation (Computer for Communication) — Srinakharinwirot University, 2028</string>
+			<string>Vajiravudh College, 2025</string>
+		</array>
+		<key>Skills</key>
+		<array>
+			<string>Frontend</string>
+			<string>Backend</string>
+			<string>Database</string>
+			<string>Security</string>
+		</array>
+		<key>Interests</key>
+		<array>
+			<string>Full-Stack Developer</string>
+			<string>Cybersecurity</string>
+			<string>Business</string>
+		</array>
+		<key>ProfileImageName</key>
+		<string>profile_image</string>
+		<key>IntroVideoName</key>
+		<string>intro_video.mov</string>
+	</dict>
+	<key>StatementOfPurpose</key>
+	<dict>
+		<key>Eyebrow</key>
+		<string>STATEMENT OF PURPOSE</string>
+		<key>MainTitle</key>
+		<string>Curious About Technology.</string>
+		<key>Subtitle</key>
+		<string>Exploring the digital world, one idea at a time.</string>
+		<key>Introduction</key>
+		<string>I'm passionate about technology and curious about how things work — from software and digital innovation to cybersecurity. I enjoy exploring new ideas, learning new skills, and understanding how technology shapes our world.</string>
+		<key>Sections</key>
+		<array>
+			<dict>
+				<key>SectionNumber</key>
+				<string>01</string>
+				<key>SectionIcon</key>
+				<string>technology</string>
+				<key>SectionTitle</key>
+				<string>Technology</string>
+				<key>SectionDescription</key>
+				<string>Interested in exploring new technologies, digital trends, and the systems behind them.</string>
+			</dict>
+			<dict>
+				<key>SectionNumber</key>
+				<string>02</string>
+				<key>SectionIcon</key>
+				<string>development</string>
+				<key>SectionTitle</key>
+				<string>Software Development</string>
+				<key>SectionDescription</key>
+				<string>Enjoy discovering how applications and websites are designed, developed, and improved.</string>
+			</dict>
+			<dict>
+				<key>SectionNumber</key>
+				<string>03</string>
+				<key>SectionIcon</key>
+				<string>security</string>
+				<key>SectionTitle</key>
+				<string>Cybersecurity</string>
+				<key>SectionDescription</key>
+				<string>Curious about digital security, ethical hacking, and protecting systems and information.</string>
+			</dict>
+		</array>
+		<key>ClosingStatement</key>
+		<string>Stay Curious. Keep Exploring.</string>
+		<key>ClosingNote</key>
+		<string>A continuous journey of learning and discovery.</string>
+	</dict>
+	<key>Projects</key>
+	<array>
+		<dict>
+			<key>ProjectName</key>
+			<string>Travel Treat Holidays</string>
+			<key>ProjectDescription</key>
+			<string>Travel Treat Holidays creates thoughtfully designed journeys across Thailand connecting travelers with the people, stories, traditions, flavors and landscapes that give each destination its character.</string>
+			<key>ProjectCategory</key>
+			<string>Backend</string>
+			<key>Technologies</key>
+			<array>
+				<string>React, Next.js, TypeScript, JavaScript</string>
+			</array>
+			<key>ProjectImageName</key>
+			<string>project_01</string>
+			<key>ProjectURL</key>
+			<string>https://travel-treat-holidays.vercel.app/</string>
+			<key>IsEnabled</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>ProjectName</key>
+			<string>Tennis Court Booking</string>
+			<key>ProjectDescription</key>
+			<string>High-Traffic Booking, Dashboard Management</string>
+			<key>ProjectCategory</key>
+			<string>Backend</string>
+			<key>Technologies</key>
+			<array>
+				<string>React, Next.js, SQL</string>
+			</array>
+			<key>ProjectImageName</key>
+			<string>project_02</string>
+			<key>ProjectURL</key>
+			<string>https://tennis-court-booking-psi.vercel.app/</string>
+			<key>IsEnabled</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>ProjectName</key>
+			<string>3d Booth Planner</string>
+			<key>ProjectDescription</key>
+			<string>3d Booth Planner, Bangchak</string>
+			<key>ProjectCategory</key>
+			<string>Backend</string>
+			<key>Technologies</key>
+			<array>
+				<string>TypeScript, JavaScript, HTML</string>
+			</array>
+			<key>ProjectImageName</key>
+			<string>project_03</string>
+			<key>ProjectURL</key>
+			<string>https://3d-booth-planner.vercel.app/</string>
+			<key>IsEnabled</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>ProjectName</key>
+			<string>W1 Bangkoknoi</string>
+			<key>ProjectDescription</key>
+			<string>W1 `Redesign, Optimization (Process)</string>
+			<key>ProjectCategory</key>
+			<string>Backend</string>
+			<key>Technologies</key>
+			<array>
+				<string>React, Next.js, Database, Mews</string>
+			</array>
+			<key>ProjectImageName</key>
+			<string>project_04</string>
+			<key>ProjectURL</key>
+			<string>https://w1-bangkoknoi.vercel.app/</string>
+			<key>IsEnabled</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>ProjectName</key>
+			<string>Krungthep Order Tracking</string>
+			<key>ProjectDescription</key>
+			<string>Google Sheet To Dashboard Web app</string>
+			<key>ProjectCategory</key>
+			<string>Backend</string>
+			<key>Technologies</key>
+			<array>
+				<string>HTML, JavaScript</string>
+			</array>
+			<key>ProjectImageName</key>
+			<string>project_05</string>
+			<key>ProjectURL</key>
+			<string>https://script.google.com/macros/s/AKfycbzM7zsFjohkOQEA-RNULszv5zxYczZto3_07GX8o00zRF4-jozpPMOjrrEj8hsL7g/exec</string>
+			<key>IsEnabled</key>
+			<true/>
+		</dict>
+	</array>
+	<key>Certificates</key>
+	<array>
+		<dict>
+			<key>CertificateName</key>
+			<string>Full Stack Web App</string>
+			<key>CertificateDescription</key>
+			<string>Coding Consultants Thailand, 25 May 2026</string>
+			<key>CertificateImageName</key>
+			<string>certificate_01</string>
+		</dict>
+		<dict>
+			<key>CertificateName</key>
+			<string>Agoda Tech Camp</string>
+			<key>CertificateDescription</key>
+			<string>Agoda, 17 July 2026</string>
+			<key>CertificateImageName</key>
+			<string>certificate_02</string>
+		</dict>
+	</array>
+</dict>
+</plist>

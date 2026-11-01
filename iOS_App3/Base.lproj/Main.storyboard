@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="25098" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nav-Ct-rl1">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="25073"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Nav-Sc-en1">
+            <objects>
+                <navigationController id="Nav-Ct-rl1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Nav-Ba-r01">
+                        <rect key="frame" x="0.0" y="117.99999999999999" width="393" height="106.66666666666664"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Nav-Tb-r01">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Nav-Sg-ue1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nav-Fr-st1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-700" y="0.0"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="iOS_App3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hm-scroll">
+                                <rect key="frame" x="0.0" y="224.66666666666669" width="393" height="559.33333333333326"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hm-content">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="559.33333333333337"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hm-group">
+                                                <rect key="frame" x="32" y="69.333333333333343" width="329" height="420.66666666666663"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERSONAL PORTFOLIO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hm-eyebrow">
+                                                        <rect key="frame" x="0.0" y="0.0" width="329" height="14.666666666666666"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                        <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="hm-avatar" customClass="CircleImageView" customModule="iOS_App3" customModuleProvider="target">
+                                                        <rect key="frame" x="84.666666666666686" y="42.666666666666686" width="160" height="160"/>
+                                                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="160" id="cn-001"/>
+                                                            <constraint firstAttribute="height" constant="160" id="cn-002"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hm-name">
+                                                        <rect key="frame" x="0.0" y="230.66666666666663" width="329" height="38.333333333333314"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                        <color key="textColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hm-title">
+                                                        <rect key="frame" x="0.0" y="275" width="329" height="20.333333333333314"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                        <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Short introduction" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hm-intro">
+                                                        <rect key="frame" x="0.0" y="313.33333333333337" width="329" height="19.333333333333314"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hm-explore">
+                                                        <rect key="frame" x="43.333333333333329" y="368.66666666666663" width="242.66666666666669" height="52"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="exploreButton"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" image="arrow.right" catalog="system" imagePlacement="trailing" title="Explore My Portfolio" imagePadding="10" cornerStyle="capsule">
+                                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="14" scale="default" weight="semibold"/>
+                                                            <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                            <directionalEdgeInsets key="contentInsets" top="16" leading="28" bottom="16" trailing="28"/>
+                                                            <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="baseBackgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <segue destination="mn-vc" kind="show" id="sg-home-menu"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="520" id="cn-003"/>
+                                                    <constraint firstItem="hm-eyebrow" firstAttribute="top" secondItem="hm-group" secondAttribute="top" id="cn-004"/>
+                                                    <constraint firstItem="hm-eyebrow" firstAttribute="leading" secondItem="hm-group" secondAttribute="leading" id="cn-005"/>
+                                                    <constraint firstItem="hm-eyebrow" firstAttribute="trailing" secondItem="hm-group" secondAttribute="trailing" id="cn-006"/>
+                                                    <constraint firstItem="hm-avatar" firstAttribute="top" secondItem="hm-eyebrow" secondAttribute="bottom" constant="28" id="cn-007"/>
+                                                    <constraint firstItem="hm-avatar" firstAttribute="centerX" secondItem="hm-group" secondAttribute="centerX" id="cn-008"/>
+                                                    <constraint firstItem="hm-name" firstAttribute="top" secondItem="hm-avatar" secondAttribute="bottom" constant="28" id="cn-009"/>
+                                                    <constraint firstItem="hm-name" firstAttribute="leading" secondItem="hm-group" secondAttribute="leading" id="cn-010"/>
+                                                    <constraint firstItem="hm-name" firstAttribute="trailing" secondItem="hm-group" secondAttribute="trailing" id="cn-011"/>
+                                                    <constraint firstItem="hm-title" firstAttribute="top" secondItem="hm-name" secondAttribute="bottom" constant="6" id="cn-012"/>
+                                                    <constraint firstItem="hm-title" firstAttribute="leading" secondItem="hm-group" secondAttribute="leading" id="cn-013"/>
+                                                    <constraint firstItem="hm-title" firstAttribute="trailing" secondItem="hm-group" secondAttribute="trailing" id="cn-014"/>
+                                                    <constraint firstItem="hm-intro" firstAttribute="top" secondItem="hm-title" secondAttribute="bottom" constant="18" id="cn-015"/>
+                                                    <constraint firstItem="hm-intro" firstAttribute="leading" secondItem="hm-group" secondAttribute="leading" id="cn-016"/>
+                                                    <constraint firstItem="hm-intro" firstAttribute="trailing" secondItem="hm-group" secondAttribute="trailing" id="cn-017"/>
+                                                    <constraint firstItem="hm-explore" firstAttribute="top" secondItem="hm-intro" secondAttribute="bottom" constant="36" id="cn-018"/>
+                                                    <constraint firstItem="hm-explore" firstAttribute="centerX" secondItem="hm-group" secondAttribute="centerX" id="cn-019"/>
+                                                    <constraint firstItem="hm-explore" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hm-group" secondAttribute="leading" id="cn-020"/>
+                                                    <constraint firstAttribute="bottom" secondItem="hm-explore" secondAttribute="bottom" id="cn-021"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="hm-group" firstAttribute="centerY" secondItem="hm-content" secondAttribute="centerY" id="cn-022"/>
+                                            <constraint firstItem="hm-group" firstAttribute="centerX" secondItem="hm-content" secondAttribute="centerX" id="cn-023"/>
+                                            <constraint firstItem="hm-group" firstAttribute="top" relation="greaterThanOrEqual" secondItem="hm-content" secondAttribute="top" constant="24" id="cn-024"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="hm-group" secondAttribute="bottom" constant="24" id="cn-025"/>
+                                            <constraint firstItem="hm-group" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="hm-content" secondAttribute="leading" constant="32" id="cn-026"/>
+                                            <constraint firstItem="hm-group" firstAttribute="leading" secondItem="hm-content" secondAttribute="leading" priority="750" constant="32" id="cn-027"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hm-content" firstAttribute="top" secondItem="hm-scroll-scg" secondAttribute="top" id="cn-028"/>
+                                    <constraint firstItem="hm-content" firstAttribute="bottom" secondItem="hm-scroll-scg" secondAttribute="bottom" id="cn-029"/>
+                                    <constraint firstItem="hm-content" firstAttribute="leading" secondItem="hm-scroll-scg" secondAttribute="leading" id="cn-030"/>
+                                    <constraint firstItem="hm-content" firstAttribute="trailing" secondItem="hm-scroll-scg" secondAttribute="trailing" id="cn-031"/>
+                                    <constraint firstItem="hm-content" firstAttribute="width" secondItem="hm-scroll-sfg" secondAttribute="width" id="cn-032"/>
+                                    <constraint firstItem="hm-content" firstAttribute="height" relation="greaterThanOrEqual" secondItem="hm-scroll-sfg" secondAttribute="height" id="cn-033"/>
+                                    <constraint firstItem="hm-content" firstAttribute="height" secondItem="hm-scroll-sfg" secondAttribute="height" priority="250" id="cn-034"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="hm-scroll-scg"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="hm-scroll-sfg"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hm-scroll" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cn-035"/>
+                            <constraint firstItem="hm-scroll" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="cn-036"/>
+                            <constraint firstItem="hm-scroll" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cn-037"/>
+                            <constraint firstItem="hm-scroll" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cn-038"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Hom-Nv-It1"/>
+                    <connections>
+                        <outlet property="contentGroupView" destination="hm-group" id="ol-039"/>
+                        <outlet property="introLabel" destination="hm-intro" id="ol-043"/>
+                        <outlet property="nameLabel" destination="hm-name" id="ol-041"/>
+                        <outlet property="profileImageView" destination="hm-avatar" id="ol-040"/>
+                        <outlet property="titleLabel" destination="hm-title" id="ol-042"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Portfolio-->
+        <scene sceneID="mn-scene">
+            <objects>
+                <tableViewController id="mn-vc" customClass="PortfolioMenuTableViewController" customModule="iOS_App3" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="73" sectionHeaderHeight="18" sectionFooterHeight="18" id="mn-table">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="separatorColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <inset key="separatorInset" minX="74" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="mn-hdr">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="16"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuTableViewCell" id="mn-cell" customClass="MenuTableViewCell" customModule="iOS_App3" customModuleProvider="target">
+                                <rect key="frame" x="20" y="102" width="353" height="73.666664123535156"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mn-cell" id="mn-ccv">
+                                    <rect key="frame" x="0.0" y="0.0" width="353" height="73.666664123535156"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mn-icobg">
+                                            <rect key="frame" x="16" y="15" width="44" height="44"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mn-icon">
+                                                    <rect key="frame" x="11" y="11" width="22" height="22"/>
+                                                    <color key="tintColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="22" id="cn-044"/>
+                                                        <constraint firstAttribute="height" constant="22" id="cn-045"/>
+                                                    </constraints>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="18" scale="default" weight="regular"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="44" id="cn-046"/>
+                                                <constraint firstAttribute="height" constant="44" id="cn-047"/>
+                                                <constraint firstItem="mn-icon" firstAttribute="centerX" secondItem="mn-icobg" secondAttribute="centerX" id="cn-048"/>
+                                                <constraint firstItem="mn-icon" firstAttribute="centerY" secondItem="mn-icobg" secondAttribute="centerY" id="cn-049"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mn-title">
+                                            <rect key="frame" x="74.000000000000014" y="16" width="241.33333333333337" height="20.666666666666671"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                            <color key="textColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mn-subtitle">
+                                            <rect key="frame" x="74.000000000000014" y="39.666666666666664" width="241.33333333333337" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mn-chev">
+                                            <rect key="frame" x="327.33333333333331" y="29.666666666666664" width="9.6666666666666856" height="14"/>
+                                            <color key="tintColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="13" scale="default" weight="semibold"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="mn-icobg" firstAttribute="leading" secondItem="mn-ccv" secondAttribute="leading" constant="16" id="cn-050"/>
+                                        <constraint firstItem="mn-icobg" firstAttribute="centerY" secondItem="mn-ccv" secondAttribute="centerY" id="cn-051"/>
+                                        <constraint firstItem="mn-icobg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="mn-ccv" secondAttribute="top" constant="14" id="cn-052"/>
+                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mn-icobg" secondAttribute="bottom" constant="14" id="cn-053"/>
+                                        <constraint firstItem="mn-title" firstAttribute="top" secondItem="mn-ccv" secondAttribute="top" constant="16" id="cn-054"/>
+                                        <constraint firstItem="mn-title" firstAttribute="leading" secondItem="mn-icobg" secondAttribute="trailing" constant="14" id="cn-055"/>
+                                        <constraint firstItem="mn-chev" firstAttribute="leading" secondItem="mn-title" secondAttribute="trailing" constant="12" id="cn-056"/>
+                                        <constraint firstItem="mn-subtitle" firstAttribute="top" secondItem="mn-title" secondAttribute="bottom" constant="3" id="cn-057"/>
+                                        <constraint firstItem="mn-subtitle" firstAttribute="leading" secondItem="mn-title" secondAttribute="leading" id="cn-058"/>
+                                        <constraint firstItem="mn-subtitle" firstAttribute="trailing" secondItem="mn-title" secondAttribute="trailing" id="cn-059"/>
+                                        <constraint firstAttribute="bottom" secondItem="mn-subtitle" secondAttribute="bottom" constant="16" id="cn-060"/>
+                                        <constraint firstAttribute="trailing" secondItem="mn-chev" secondAttribute="trailing" constant="16" id="cn-061"/>
+                                        <constraint firstItem="mn-chev" firstAttribute="centerY" secondItem="mn-ccv" secondAttribute="centerY" id="cn-062"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="chevronImageView" destination="mn-chev" id="ol-066"/>
+                                    <outlet property="iconImageView" destination="mn-icon" id="ol-063"/>
+                                    <outlet property="subtitleLabel" destination="mn-subtitle" id="ol-065"/>
+                                    <outlet property="titleLabel" destination="mn-title" id="ol-064"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="mn-vc" id="mn-ds"/>
+                            <outlet property="delegate" destination="mn-vc" id="mn-dl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Portfolio" largeTitleDisplayMode="always" id="mn-ni"/>
+                    <connections>
+                        <segue destination="ab-vc" kind="show" identifier="showAbout" id="sg-about"/>
+                        <segue destination="ac-vc" kind="show" identifier="showActivities" id="sg-activities"/>
+                        <segue destination="ce-vc" kind="show" identifier="showCertificates" id="sg-certificates"/>
+                        <segue destination="st-vc" kind="show" identifier="showStatement" id="sg-statement"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mn-fr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="700" y="0.0"/>
+        </scene>
+        <!--About Me-->
+        <scene sceneID="ab-scene">
+            <objects>
+                <viewController id="ab-vc" customClass="AboutViewController" customModule="iOS_App3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ab-root">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ab-scroll">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ab-content">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="872"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="ab-stack">
+                                                <rect key="frame" x="24" y="16" width="345" height="816"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ab-hdr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="345" height="177.33333333333334"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile_image" translatesAutoresizingMaskIntoConstraints="NO" id="ab-avatar" customClass="CircleImageView" customModule="iOS_App3" customModuleProvider="target">
+                                                                <rect key="frame" x="120.66666666666666" y="0.0" width="104" height="104"/>
+                                                                <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="104" id="cn-071"/>
+                                                                    <constraint firstAttribute="height" constant="104" id="cn-072"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ab-name">
+                                                                <rect key="frame" x="0.0" y="115.99999999999999" width="345" height="31.333333333333329"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                                                <color key="textColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ab-title">
+                                                                <rect key="frame" x="0.0" y="159.33333333333334" width="345" height="18"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="ab-name" firstAttribute="width" secondItem="ab-hdr" secondAttribute="width" id="cn-073"/>
+                                                            <constraint firstItem="ab-title" firstAttribute="width" secondItem="ab-hdr" secondAttribute="width" id="cn-074"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ab-div">
+                                                        <rect key="frame" x="0.0" y="205.33333333333334" width="345" height="1"/>
+                                                        <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="cn-075"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ab-vsec">
+                                                        <rect key="frame" x="0.0" y="234.33333333333337" width="345" height="194"/>
+                                                        <subviews>
+                                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ab-vctr">
+                                                                <rect key="frame" x="0.0" y="0.0" width="345" height="194"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ab-vph">
+                                                                        <rect key="frame" x="96.000000000000014" y="68.999999999999972" width="153.33333333333337" height="56"/>
+                                                                        <subviews>
+                                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video.slash" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ab-vph-ic">
+                                                                                <rect key="frame" x="58" y="-1.9999999999999964" width="37" height="34.666666666666671"/>
+                                                                                <color key="tintColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="26" scale="default" weight="light"/>
+                                                                            </imageView>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intro video not available" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ab-vph-lbl">
+                                                                                <rect key="frame" x="0.0" y="39" width="153.33333333333334" height="17"/>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                                <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="ab-vctr" secondAttribute="height" multiplier="16:9" id="cn-076"/>
+                                                                    <constraint firstItem="ab-vph" firstAttribute="centerX" secondItem="ab-vctr" secondAttribute="centerX" id="cn-077"/>
+                                                                    <constraint firstItem="ab-vph" firstAttribute="centerY" secondItem="ab-vctr" secondAttribute="centerY" id="cn-078"/>
+                                                                    <constraint firstItem="ab-vph" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ab-vctr" secondAttribute="leading" constant="16" id="cn-079"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="14"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ab-isec">
+                                                        <rect key="frame" x="0.0" y="456.33333333333331" width="345" height="43.666666666666686"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INTRODUCTION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ab-isec-eb">
+                                                                <rect key="frame" x="0.0" y="0.0" width="345" height="14.333333333333334"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                                <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ab-intro">
+                                                                <rect key="frame" x="0.0" y="24.333333333333371" width="345" height="19.333333333333329"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                <color key="textColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ab-esec">
+                                                        <rect key="frame" x="0.0" y="528" width="345" height="43.666666666666629"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EDUCATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ab-esec-eb">
+                                                                <rect key="frame" x="0.0" y="0.0" width="345" height="14.333333333333334"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                                <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Education" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ab-edu">
+                                                                <rect key="frame" x="0.0" y="24.333333333333371" width="345" height="19.333333333333329"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                <color key="textColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ab-ssec">
+                                                        <rect key="frame" x="0.0" y="599.66666666666663" width="345" height="58.333333333333371"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SKILLS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ab-ssec-eb">
+                                                                <rect key="frame" x="0.0" y="0.0" width="345" height="14.333333333333334"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                                <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="34" translatesAutoresizingMaskIntoConstraints="NO" id="ab-skills" customClass="TagFlowView" customModule="iOS_App3" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="24.333333333333371" width="345" height="34"/>
+                                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ab-nsec">
+                                                        <rect key="frame" x="0.0" y="686" width="345" height="58.333333333333371"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INTERESTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ab-nsec-eb">
+                                                                <rect key="frame" x="0.0" y="0.0" width="345" height="14.333333333333334"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                                <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="34" translatesAutoresizingMaskIntoConstraints="NO" id="ab-interests" customClass="TagFlowView" customModule="iOS_App3" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="24.333333333333371" width="345" height="34"/>
+                                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ab-bsec">
+                                                        <rect key="frame" x="0.0" y="772.33333333333337" width="345" height="43.666666666666629"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PERSONAL BACKGROUND" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ab-bsec-eb">
+                                                                <rect key="frame" x="0.0" y="0.0" width="345" height="14.333333333333334"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                                <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal background" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ab-bg">
+                                                                <rect key="frame" x="0.0" y="24.333333333333258" width="345" height="19.333333333333329"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                <color key="textColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="ab-stack" firstAttribute="top" secondItem="ab-content" secondAttribute="top" constant="16" id="cn-080"/>
+                                            <constraint firstItem="ab-stack" firstAttribute="leading" secondItem="ab-content" secondAttribute="leading" constant="24" id="cn-081"/>
+                                            <constraint firstAttribute="trailing" secondItem="ab-stack" secondAttribute="trailing" constant="24" id="cn-082"/>
+                                            <constraint firstAttribute="bottom" secondItem="ab-stack" secondAttribute="bottom" constant="40" id="cn-083"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ab-content" firstAttribute="top" secondItem="ab-scroll-scg" secondAttribute="top" id="cn-084"/>
+                                    <constraint firstItem="ab-content" firstAttribute="bottom" secondItem="ab-scroll-scg" secondAttribute="bottom" id="cn-085"/>
+                                    <constraint firstItem="ab-content" firstAttribute="leading" secondItem="ab-scroll-scg" secondAttribute="leading" id="cn-086"/>
+                                    <constraint firstItem="ab-content" firstAttribute="trailing" secondItem="ab-scroll-scg" secondAttribute="trailing" id="cn-087"/>
+                                    <constraint firstItem="ab-content" firstAttribute="width" secondItem="ab-scroll-sfg" secondAttribute="width" id="cn-088"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="ab-scroll-scg"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ab-scroll-sfg"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ab-safe"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ab-scroll" firstAttribute="top" secondItem="ab-root" secondAttribute="top" id="cn-089"/>
+                            <constraint firstItem="ab-scroll" firstAttribute="bottom" secondItem="ab-root" secondAttribute="bottom" id="cn-090"/>
+                            <constraint firstItem="ab-scroll" firstAttribute="leading" secondItem="ab-safe" secondAttribute="leading" id="cn-091"/>
+                            <constraint firstItem="ab-scroll" firstAttribute="trailing" secondItem="ab-safe" secondAttribute="trailing" id="cn-092"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About Me" largeTitleDisplayMode="never" id="ab-ni"/>
+                    <connections>
+                        <outlet property="backgroundLabel" destination="ab-bg" id="ol-108"/>
+                        <outlet property="backgroundSection" destination="ab-bsec" id="ol-107"/>
+                        <outlet property="educationLabel" destination="ab-edu" id="ol-102"/>
+                        <outlet property="educationSection" destination="ab-esec" id="ol-101"/>
+                        <outlet property="interestsSection" destination="ab-nsec" id="ol-105"/>
+                        <outlet property="interestsTagView" destination="ab-interests" id="ol-106"/>
+                        <outlet property="introLabel" destination="ab-intro" id="ol-100"/>
+                        <outlet property="introSection" destination="ab-isec" id="ol-099"/>
+                        <outlet property="nameLabel" destination="ab-name" id="ol-094"/>
+                        <outlet property="profileImageView" destination="ab-avatar" id="ol-093"/>
+                        <outlet property="skillsSection" destination="ab-ssec" id="ol-103"/>
+                        <outlet property="skillsTagView" destination="ab-skills" id="ol-104"/>
+                        <outlet property="titleLabel" destination="ab-title" id="ol-095"/>
+                        <outlet property="videoContainerView" destination="ab-vctr" id="ol-096"/>
+                        <outlet property="videoPlaceholderView" destination="ab-vph" id="ol-097"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ab-fr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1045" y="735"/>
+        </scene>
+        <!--Activities & Works-->
+        <scene sceneID="ac-scene">
+            <objects>
+                <viewController id="ac-vc" customClass="ActivitiesViewController" customModule="iOS_App3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ac-root">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="442" sectionHeaderHeight="0.0" sectionFooterHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="ac-table">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="ac-hdr">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="8"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ProjectCardCell" id="ac-cell" customClass="ProjectCardCell" customModule="iOS_App3" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="142" width="393" height="421"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ac-cell" id="ac-ccv">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="421"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ac-card">
+                                                    <rect key="frame" x="20" y="10" width="353" height="401"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="project_01" translatesAutoresizingMaskIntoConstraints="NO" id="ac-cover">
+                                                            <rect key="frame" x="0.0" y="0.0" width="353" height="198.66666666666666"/>
+                                                            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="ac-cover" secondAttribute="height" multiplier="16:9" id="cn-109"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ac-idxbg">
+                                                            <rect key="frame" x="14" y="14" width="36" height="24"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ac-index">
+                                                                    <rect key="frame" x="11" y="5.0000000000000009" width="14" height="14.333333333333336"/>
+                                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                                    <color key="textColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="36" id="cn-110"/>
+                                                                <constraint firstAttribute="height" constant="24" id="cn-111"/>
+                                                                <constraint firstItem="ac-index" firstAttribute="centerX" secondItem="ac-idxbg" secondAttribute="centerX" id="cn-112"/>
+                                                                <constraint firstItem="ac-index" firstAttribute="centerY" secondItem="ac-idxbg" secondAttribute="centerY" id="cn-113"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="12"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CATEGORY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ac-cat">
+                                                            <rect key="frame" x="18" y="216.66666666666666" width="317" height="14.666666666666657"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                                            <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ac-name">
+                                                            <rect key="frame" x="18" y="237.33333333333334" width="317" height="24.000000000000028"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                            <color key="textColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Project description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ac-desc">
+                                                            <rect key="frame" x="18" y="269.33333333333331" width="317" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Technologies" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ac-tech">
+                                                            <rect key="frame" x="18" y="299.33333333333331" width="317" height="15.666666666666686"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                                            <color key="textColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ac-div">
+                                                            <rect key="frame" x="18" y="331" width="317" height="1"/>
+                                                            <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="cn-114"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="example.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ac-link">
+                                                            <rect key="frame" x="18" y="356.33333333333331" width="80.333333333333329" height="16"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                            <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ac-btn">
+                                                            <rect key="frame" x="201" y="346" width="134" height="37"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="filled" image="arrow.up.right" catalog="system" imagePlacement="trailing" title="View Project" imagePadding="6" cornerStyle="capsule">
+                                                                <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="11" scale="default" weight="bold"/>
+                                                                <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="14"/>
+                                                                <directionalEdgeInsets key="contentInsets" top="10" leading="16" bottom="10" trailing="16"/>
+                                                                <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <color key="baseBackgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="viewProjectTapped:" destination="ac-cell" eventType="touchUpInside" id="ac-btn-act"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="ac-cover" firstAttribute="top" secondItem="ac-card" secondAttribute="top" id="cn-115"/>
+                                                        <constraint firstItem="ac-cover" firstAttribute="leading" secondItem="ac-card" secondAttribute="leading" id="cn-116"/>
+                                                        <constraint firstItem="ac-cover" firstAttribute="trailing" secondItem="ac-card" secondAttribute="trailing" id="cn-117"/>
+                                                        <constraint firstItem="ac-idxbg" firstAttribute="top" secondItem="ac-cover" secondAttribute="top" constant="14" id="cn-118"/>
+                                                        <constraint firstItem="ac-idxbg" firstAttribute="leading" secondItem="ac-cover" secondAttribute="leading" constant="14" id="cn-119"/>
+                                                        <constraint firstItem="ac-cat" firstAttribute="top" secondItem="ac-cover" secondAttribute="bottom" constant="18" id="cn-120"/>
+                                                        <constraint firstItem="ac-cat" firstAttribute="leading" secondItem="ac-card" secondAttribute="leading" constant="18" id="cn-121"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ac-cat" secondAttribute="trailing" constant="18" id="cn-122"/>
+                                                        <constraint firstItem="ac-name" firstAttribute="top" secondItem="ac-cat" secondAttribute="bottom" constant="6" id="cn-123"/>
+                                                        <constraint firstItem="ac-name" firstAttribute="leading" secondItem="ac-cat" secondAttribute="leading" id="cn-124"/>
+                                                        <constraint firstItem="ac-name" firstAttribute="trailing" secondItem="ac-cat" secondAttribute="trailing" id="cn-125"/>
+                                                        <constraint firstItem="ac-desc" firstAttribute="top" secondItem="ac-name" secondAttribute="bottom" constant="8" id="cn-126"/>
+                                                        <constraint firstItem="ac-desc" firstAttribute="leading" secondItem="ac-cat" secondAttribute="leading" id="cn-127"/>
+                                                        <constraint firstItem="ac-desc" firstAttribute="trailing" secondItem="ac-cat" secondAttribute="trailing" id="cn-128"/>
+                                                        <constraint firstItem="ac-tech" firstAttribute="top" secondItem="ac-desc" secondAttribute="bottom" constant="12" id="cn-129"/>
+                                                        <constraint firstItem="ac-tech" firstAttribute="leading" secondItem="ac-cat" secondAttribute="leading" id="cn-130"/>
+                                                        <constraint firstItem="ac-tech" firstAttribute="trailing" secondItem="ac-cat" secondAttribute="trailing" id="cn-131"/>
+                                                        <constraint firstItem="ac-div" firstAttribute="top" secondItem="ac-tech" secondAttribute="bottom" constant="16" id="cn-132"/>
+                                                        <constraint firstItem="ac-div" firstAttribute="leading" secondItem="ac-cat" secondAttribute="leading" id="cn-133"/>
+                                                        <constraint firstItem="ac-div" firstAttribute="trailing" secondItem="ac-cat" secondAttribute="trailing" id="cn-134"/>
+                                                        <constraint firstItem="ac-btn" firstAttribute="top" secondItem="ac-div" secondAttribute="bottom" constant="14" id="cn-135"/>
+                                                        <constraint firstItem="ac-btn" firstAttribute="trailing" secondItem="ac-cat" secondAttribute="trailing" id="cn-136"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ac-btn" secondAttribute="bottom" constant="18" id="cn-137"/>
+                                                        <constraint firstItem="ac-link" firstAttribute="leading" secondItem="ac-cat" secondAttribute="leading" id="cn-138"/>
+                                                        <constraint firstItem="ac-link" firstAttribute="centerY" secondItem="ac-btn" secondAttribute="centerY" id="cn-139"/>
+                                                        <constraint firstItem="ac-btn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ac-link" secondAttribute="trailing" constant="12" id="cn-140"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="16"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ac-card" firstAttribute="top" secondItem="ac-ccv" secondAttribute="top" constant="10" id="cn-141"/>
+                                                <constraint firstItem="ac-card" firstAttribute="leading" secondItem="ac-ccv" secondAttribute="leading" constant="20" id="cn-142"/>
+                                                <constraint firstAttribute="trailing" secondItem="ac-card" secondAttribute="trailing" constant="20" id="cn-143"/>
+                                                <constraint firstAttribute="bottom" secondItem="ac-card" secondAttribute="bottom" constant="10" id="cn-144"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="cardView" destination="ac-card" id="ol-145"/>
+                                            <outlet property="categoryLabel" destination="ac-cat" id="ol-148"/>
+                                            <outlet property="coverImageView" destination="ac-cover" id="ol-146"/>
+                                            <outlet property="descriptionLabel" destination="ac-desc" id="ol-150"/>
+                                            <outlet property="indexLabel" destination="ac-index" id="ol-147"/>
+                                            <outlet property="linkLabel" destination="ac-link" id="ol-152"/>
+                                            <outlet property="nameLabel" destination="ac-name" id="ol-149"/>
+                                            <outlet property="technologiesLabel" destination="ac-tech" id="ol-151"/>
+                                            <outlet property="viewProjectButton" destination="ac-btn" id="ol-153"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ac-vc" id="ac-ds"/>
+                                    <outlet property="delegate" destination="ac-vc" id="ac-dl"/>
+                                </connections>
+                            </tableView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ac-empty">
+                                <rect key="frame" x="40" y="460" width="313" height="36"/>
+                                <string key="text">No projects yet.
+Add projects in PortfolioData.plist → Projects.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ac-safe"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ac-table" firstAttribute="top" secondItem="ac-root" secondAttribute="top" id="cn-161"/>
+                            <constraint firstItem="ac-table" firstAttribute="bottom" secondItem="ac-root" secondAttribute="bottom" id="cn-162"/>
+                            <constraint firstItem="ac-table" firstAttribute="leading" secondItem="ac-safe" secondAttribute="leading" id="cn-163"/>
+                            <constraint firstItem="ac-table" firstAttribute="trailing" secondItem="ac-safe" secondAttribute="trailing" id="cn-164"/>
+                            <constraint firstItem="ac-empty" firstAttribute="centerY" secondItem="ac-safe" secondAttribute="centerY" id="cn-165"/>
+                            <constraint firstItem="ac-empty" firstAttribute="leading" secondItem="ac-safe" secondAttribute="leading" constant="40" id="cn-166"/>
+                            <constraint firstItem="ac-safe" firstAttribute="trailing" secondItem="ac-empty" secondAttribute="trailing" constant="40" id="cn-167"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Activities &amp; Works" largeTitleDisplayMode="never" id="ac-ni"/>
+                    <connections>
+                        <outlet property="emptyStateLabel" destination="ac-empty" id="ol-170"/>
+                        <outlet property="tableView" destination="ac-table" id="ol-168"/>
+                        <segue destination="wb-vc" kind="show" identifier="showProject" id="sg-project"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ac-fr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1400" y="0.0"/>
+        </scene>
+        <!--Project-->
+        <scene sceneID="wb-scene">
+            <objects>
+                <viewController id="wb-vc" customClass="ProjectWebViewController" customModule="iOS_App3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wb-root">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wb-ctr">
+                                <rect key="frame" x="0.0" y="172" width="393" height="598"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="wb-spin">
+                                <rect key="frame" x="178" y="452.66666666666669" width="37" height="37"/>
+                                <color key="color" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wb-err">
+                                <rect key="frame" x="0.0" y="172" width="393" height="598"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="wb-estk">
+                                        <rect key="frame" x="40" y="217.66666666666669" width="313" height="163"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exclamationmark.triangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wb-eicon">
+                                                <rect key="frame" x="134.66666666666666" y="1.6666666666666643" width="44" height="39.333333333333336"/>
+                                                <color key="tintColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="36" scale="default" weight="light"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unable to load website" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wb-etitle">
+                                                <rect key="frame" x="0.0" y="55" width="313" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <color key="textColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wb-emsg">
+                                                <rect key="frame" x="0.0" y="91" width="313" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wb-retry">
+                                                <rect key="frame" x="101" y="121" width="111.33333333333331" height="42"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Try Again" cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                    <directionalEdgeInsets key="contentInsets" top="12" leading="22" bottom="12" trailing="22"/>
+                                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="baseBackgroundColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="retryTapped:" destination="wb-vc" eventType="touchUpInside" id="wb-retry-act"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="wb-etitle" firstAttribute="width" secondItem="wb-estk" secondAttribute="width" id="cn-171"/>
+                                            <constraint firstItem="wb-emsg" firstAttribute="width" secondItem="wb-estk" secondAttribute="width" id="cn-172"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="wb-estk" firstAttribute="centerY" secondItem="wb-err" secondAttribute="centerY" id="cn-173"/>
+                                    <constraint firstItem="wb-estk" firstAttribute="leading" secondItem="wb-err" secondAttribute="leading" constant="40" id="cn-174"/>
+                                    <constraint firstAttribute="trailing" secondItem="wb-estk" secondAttribute="trailing" constant="40" id="cn-175"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wb-safe"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wb-ctr" firstAttribute="top" secondItem="wb-safe" secondAttribute="top" id="cn-177"/>
+                            <constraint firstItem="wb-ctr" firstAttribute="bottom" secondItem="wb-safe" secondAttribute="bottom" id="cn-178"/>
+                            <constraint firstItem="wb-ctr" firstAttribute="leading" secondItem="wb-safe" secondAttribute="leading" id="cn-179"/>
+                            <constraint firstItem="wb-ctr" firstAttribute="trailing" secondItem="wb-safe" secondAttribute="trailing" id="cn-180"/>
+                            <constraint firstItem="wb-spin" firstAttribute="centerX" secondItem="wb-ctr" secondAttribute="centerX" id="cn-184"/>
+                            <constraint firstItem="wb-spin" firstAttribute="centerY" secondItem="wb-ctr" secondAttribute="centerY" id="cn-185"/>
+                            <constraint firstItem="wb-err" firstAttribute="top" secondItem="wb-ctr" secondAttribute="top" id="cn-186"/>
+                            <constraint firstItem="wb-err" firstAttribute="bottom" secondItem="wb-ctr" secondAttribute="bottom" id="cn-187"/>
+                            <constraint firstItem="wb-err" firstAttribute="leading" secondItem="wb-ctr" secondAttribute="leading" id="cn-188"/>
+                            <constraint firstItem="wb-err" firstAttribute="trailing" secondItem="wb-ctr" secondAttribute="trailing" id="cn-189"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem image="chevron.backward" catalog="system" id="wb-back">
+                            <connections>
+                                <action selector="goBack:" destination="wb-vc" id="wb-back-act"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem width="24" style="plain" systemItem="fixedSpace" id="wb-fix"/>
+                        <barButtonItem image="chevron.forward" catalog="system" id="wb-fwd">
+                            <connections>
+                                <action selector="goForward:" destination="wb-vc" id="wb-fwd-act"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="wb-flex"/>
+                        <barButtonItem image="arrow.clockwise" catalog="system" id="wb-reload">
+                            <connections>
+                                <action selector="reloadOrStop:" destination="wb-vc" id="wb-reload-act"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Project" largeTitleDisplayMode="never" id="wb-ni"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="backItem" destination="wb-back" id="ol-198"/>
+                        <outlet property="errorMessageLabel" destination="wb-emsg" id="ol-196"/>
+                        <outlet property="errorTitleLabel" destination="wb-etitle" id="ol-195"/>
+                        <outlet property="errorView" destination="wb-err" id="ol-193"/>
+                        <outlet property="forwardItem" destination="wb-fwd" id="ol-199"/>
+                        <outlet property="loadingIndicator" destination="wb-spin" id="ol-192"/>
+                        <outlet property="reloadItem" destination="wb-reload" id="ol-200"/>
+                        <outlet property="webContainerView" destination="wb-ctr" id="ol-190"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wb-fr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2100" y="0.0"/>
+        </scene>
+        <!--Certificates-->
+        <scene sceneID="ce-scene">
+            <objects>
+                <viewController id="ce-vc" customClass="CertificatesViewController" customModule="iOS_App3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ce-root">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ce-col">
+                                <rect key="frame" x="0.0" y="209" width="393" height="507"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ce-flow">
+                                    <size key="itemSize" width="393" height="610"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CertificateCollectionViewCell" id="ce-cell" customClass="CertificateCollectionViewCell" customModule="iOS_App3" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-51.666666666666664" width="393" height="610"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ce-ccv">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="610"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ce-card">
+                                                    <rect key="frame" x="20" y="8" width="353" height="594"/>
+                                                    <subviews>
+                                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ce-ictr">
+                                                            <rect key="frame" x="12" y="12" width="329" height="496"/>
+                                                            <subviews>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="certificate_01" translatesAutoresizingMaskIntoConstraints="NO" id="ce-img">
+                                                                    <rect key="frame" x="12" y="12" width="305" height="472"/>
+                                                                </imageView>
+                                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.up.left.and.arrow.down.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ce-zoom">
+                                                                    <rect key="frame" x="289" y="456" width="30" height="29.333333333333314"/>
+                                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <color key="tintColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="30" id="cn-201"/>
+                                                                        <constraint firstAttribute="height" constant="30" id="cn-202"/>
+                                                                    </constraints>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="12" scale="default" weight="semibold"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="15"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstItem="ce-img" firstAttribute="top" secondItem="ce-ictr" secondAttribute="top" constant="12" id="cn-203"/>
+                                                                <constraint firstItem="ce-img" firstAttribute="leading" secondItem="ce-ictr" secondAttribute="leading" constant="12" id="cn-204"/>
+                                                                <constraint firstAttribute="trailing" secondItem="ce-img" secondAttribute="trailing" constant="12" id="cn-205"/>
+                                                                <constraint firstAttribute="bottom" secondItem="ce-img" secondAttribute="bottom" constant="12" id="cn-206"/>
+                                                                <constraint firstAttribute="trailing" secondItem="ce-zoom" secondAttribute="trailing" constant="10" id="cn-207"/>
+                                                                <constraint firstAttribute="bottom" secondItem="ce-zoom" secondAttribute="bottom" constant="10" id="cn-208"/>
+                                                            </constraints>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                    <real key="value" value="12"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Certificate Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ce-name">
+                                                            <rect key="frame" x="20" y="526" width="313" height="24"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                            <color key="textColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Short description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ce-desc">
+                                                            <rect key="frame" x="20" y="556" width="313" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="ce-ictr" firstAttribute="top" secondItem="ce-card" secondAttribute="top" constant="12" id="cn-209"/>
+                                                        <constraint firstItem="ce-ictr" firstAttribute="leading" secondItem="ce-card" secondAttribute="leading" constant="12" id="cn-210"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ce-ictr" secondAttribute="trailing" constant="12" id="cn-211"/>
+                                                        <constraint firstItem="ce-name" firstAttribute="top" secondItem="ce-ictr" secondAttribute="bottom" constant="18" id="cn-212"/>
+                                                        <constraint firstItem="ce-name" firstAttribute="leading" secondItem="ce-card" secondAttribute="leading" constant="20" id="cn-213"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ce-name" secondAttribute="trailing" constant="20" id="cn-214"/>
+                                                        <constraint firstItem="ce-desc" firstAttribute="top" secondItem="ce-name" secondAttribute="bottom" constant="6" id="cn-215"/>
+                                                        <constraint firstItem="ce-desc" firstAttribute="leading" secondItem="ce-name" secondAttribute="leading" id="cn-216"/>
+                                                        <constraint firstItem="ce-desc" firstAttribute="trailing" secondItem="ce-name" secondAttribute="trailing" id="cn-217"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ce-desc" secondAttribute="bottom" constant="20" id="cn-218"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="16"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ce-card" firstAttribute="top" secondItem="ce-ccv" secondAttribute="top" constant="8" id="cn-219"/>
+                                                <constraint firstItem="ce-card" firstAttribute="leading" secondItem="ce-ccv" secondAttribute="leading" constant="20" id="cn-220"/>
+                                                <constraint firstAttribute="trailing" secondItem="ce-card" secondAttribute="trailing" constant="20" id="cn-221"/>
+                                                <constraint firstAttribute="bottom" secondItem="ce-card" secondAttribute="bottom" constant="8" id="cn-222"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="cardView" destination="ce-card" id="ol-223"/>
+                                            <outlet property="certificateImageView" destination="ce-img" id="ol-224"/>
+                                            <outlet property="descriptionLabel" destination="ce-desc" id="ol-226"/>
+                                            <outlet property="nameLabel" destination="ce-name" id="ol-225"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="ce-vc" id="ce-ds"/>
+                                    <outlet property="delegate" destination="ce-vc" id="ce-dl"/>
+                                </connections>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="ce-page">
+                                <rect key="frame" x="169" y="724" width="55.333333333333343" height="26"/>
+                                <color key="pageIndicatorTintColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="0.34999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="pageControlChanged:" destination="ce-vc" eventType="valueChanged" id="ce-page-act"/>
+                                </connections>
+                            </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01 / 02" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ce-count">
+                                <rect key="frame" x="175.33333333333334" y="752" width="42.666666666666657" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ce-empty">
+                                <rect key="frame" x="40" y="451" width="313" height="54"/>
+                                <string key="text">No certificates yet.
+Add certificates in PortfolioData.plist → Certificates.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ce-safe"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ce-col" firstAttribute="top" secondItem="ce-safe" secondAttribute="top" constant="16" id="ce-col-top"/>
+                            <constraint firstItem="ce-col" firstAttribute="leading" secondItem="ce-safe" secondAttribute="leading" id="cn-231"/>
+                            <constraint firstItem="ce-col" firstAttribute="trailing" secondItem="ce-safe" secondAttribute="trailing" id="cn-232"/>
+                            <constraint firstItem="ce-page" firstAttribute="top" secondItem="ce-col" secondAttribute="bottom" constant="8" id="cn-233"/>
+                            <constraint firstItem="ce-page" firstAttribute="centerX" secondItem="ce-root" secondAttribute="centerX" id="cn-234"/>
+                            <constraint firstItem="ce-count" firstAttribute="top" secondItem="ce-page" secondAttribute="bottom" constant="2" id="cn-235"/>
+                            <constraint firstItem="ce-count" firstAttribute="centerX" secondItem="ce-root" secondAttribute="centerX" id="cn-236"/>
+                            <constraint firstItem="ce-safe" firstAttribute="bottom" secondItem="ce-count" secondAttribute="bottom" constant="16" id="cn-237"/>
+                            <constraint firstItem="ce-empty" firstAttribute="centerY" secondItem="ce-safe" secondAttribute="centerY" id="cn-238"/>
+                            <constraint firstItem="ce-empty" firstAttribute="leading" secondItem="ce-safe" secondAttribute="leading" constant="40" id="cn-239"/>
+                            <constraint firstItem="ce-safe" firstAttribute="trailing" secondItem="ce-empty" secondAttribute="trailing" constant="40" id="cn-240"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Certificates" largeTitleDisplayMode="never" id="ce-ni"/>
+                    <connections>
+                        <outlet property="collectionView" destination="ce-col" id="ol-241"/>
+                        <outlet property="counterLabel" destination="ce-count" id="ol-243"/>
+                        <outlet property="emptyStateLabel" destination="ce-empty" id="ol-244"/>
+                        <outlet property="pageControl" destination="ce-page" id="ol-242"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ce-fr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1750" y="735"/>
+        </scene>
+        <!--Statement of Purpose-->
+        <scene sceneID="st-scene">
+            <objects>
+                <viewController id="st-vc" customClass="StatementViewController" customModule="iOS_App3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="st-root">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="st-ctr">
+                                <rect key="frame" x="0.0" y="172" width="393" height="680"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="statementWebContainer"/>
+                            </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="st-spin">
+                                <rect key="frame" x="186.66666666666666" y="502" width="20" height="20"/>
+                                <color key="color" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="st-err">
+                                <rect key="frame" x="40" y="426" width="313" height="104"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exclamationmark.triangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="st-err-icon">
+                                        <rect key="frame" x="137" y="1.3333333333333286" width="39.333333333333343" height="35"/>
+                                        <color key="tintColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32" scale="default" weight="light"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statement unavailable" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="st-err-title">
+                                        <rect key="frame" x="0.0" y="50" width="313" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <color key="textColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="st-err-msg">
+                                        <rect key="frame" x="0.0" y="86" width="313" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="st-err-title" firstAttribute="width" secondItem="st-err" secondAttribute="width" id="st-c11"/>
+                                    <constraint firstItem="st-err-msg" firstAttribute="width" secondItem="st-err" secondAttribute="width" id="st-c12"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="st-safe"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="st-ctr" firstAttribute="top" secondItem="st-safe" secondAttribute="top" id="st-c01"/>
+                            <constraint firstItem="st-ctr" firstAttribute="leading" secondItem="st-safe" secondAttribute="leading" id="st-c02"/>
+                            <constraint firstItem="st-ctr" firstAttribute="trailing" secondItem="st-safe" secondAttribute="trailing" id="st-c03"/>
+                            <constraint firstItem="st-ctr" firstAttribute="bottom" secondItem="st-root" secondAttribute="bottom" id="st-c04"/>
+                            <constraint firstItem="st-spin" firstAttribute="centerX" secondItem="st-ctr" secondAttribute="centerX" id="st-c05"/>
+                            <constraint firstItem="st-spin" firstAttribute="centerY" secondItem="st-ctr" secondAttribute="centerY" id="st-c06"/>
+                            <constraint firstItem="st-err" firstAttribute="centerY" secondItem="st-safe" secondAttribute="centerY" id="st-c07"/>
+                            <constraint firstItem="st-err" firstAttribute="leading" secondItem="st-safe" secondAttribute="leading" constant="40" id="st-c08"/>
+                            <constraint firstItem="st-safe" firstAttribute="trailing" secondItem="st-err" secondAttribute="trailing" constant="40" id="st-c09"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Statement of Purpose" largeTitleDisplayMode="never" id="st-ni"/>
+                    <connections>
+                        <outlet property="errorMessageLabel" destination="st-err-msg" id="st-o1"/>
+                        <outlet property="errorView" destination="st-err" id="st-o2"/>
+                        <outlet property="loadingIndicator" destination="st-spin" id="st-o3"/>
+                        <outlet property="webContainerView" destination="st-ctr" id="st-o4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="st-fr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="343" y="735"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.clockwise" catalog="system" width="107" height="128"/>
+        <image name="arrow.right" catalog="system" width="128" height="99"/>
+        <image name="arrow.up.left.and.arrow.down.right" catalog="system" width="128" height="119"/>
+        <image name="arrow.up.right" catalog="system" width="128" height="115"/>
+        <image name="certificate_01" width="2328" height="1656"/>
+        <image name="chevron.backward" catalog="system" width="93" height="128"/>
+        <image name="chevron.forward" catalog="system" width="93" height="128"/>
+        <image name="chevron.right" catalog="system" width="93" height="128"/>
+        <image name="exclamationmark.triangle" catalog="system" width="128" height="113"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="128"/>
+        <image name="profile_image" width="1252" height="1270"/>
+        <image name="project_01" width="3024" height="1656"/>
+        <image name="video.slash" catalog="system" width="128" height="120"/>
+    </resources>
+</document>

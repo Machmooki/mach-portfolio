@@ -20,7 +20,8 @@ class PortfolioMenuTableViewController: UITableViewController {
         MenuItem(title: "About Me", subtitle: "Personal Profile & Background", icon: "person.crop.circle", segueIdentifier: "showAbout"),
         MenuItem(title: "Statement of Purpose", subtitle: "Inspiration & Future Goals", icon: "lightbulb", segueIdentifier: "showStatement"),
         MenuItem(title: "Activities & Works", subtitle: "Projects & Experiences", icon: "folder", segueIdentifier: "showActivities"),
-        MenuItem(title: "Certificates", subtitle: "Achievements & Certifications", icon: "rosette", segueIdentifier: "showCertificates")
+        MenuItem(title: "Certificates", subtitle: "Achievements & Certifications", icon: "rosette", segueIdentifier: "showCertificates"),
+        MenuItem(title: "Places of Interest", subtitle: "5 Special Places on the Map", icon: "map", segueIdentifier: "showPlaces")
     ]
 
     override func viewDidLoad() {

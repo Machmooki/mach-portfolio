@@ -36,14 +36,6 @@
 	</dict>
 	<key>StatementOfPurpose</key>
 	<dict>
-		<key>Eyebrow</key>
-		<string>STATEMENT OF PURPOSE</string>
-		<key>MainTitle</key>
-		<string>Curious About Technology.</string>
-		<key>Subtitle</key>
-		<string>Exploring the digital world, one idea at a time.</string>
-		<key>Introduction</key>
-		<string>I'm passionate about technology and curious about how things work — from software and digital innovation to cybersecurity. I enjoy exploring new ideas, learning new skills, and understanding how technology shapes our world.</string>
 		<key>Sections</key>
 		<array>
 			<dict>
@@ -77,10 +69,6 @@
 				<string>Curious about digital security, ethical hacking, and protecting systems and information.</string>
 			</dict>
 		</array>
-		<key>ClosingStatement</key>
-		<string>Stay Curious. Keep Exploring.</string>
-		<key>ClosingNote</key>
-		<string>A continuous journey of learning and discovery.</string>
 	</dict>
 	<key>Projects</key>
 	<array>
@@ -192,6 +180,69 @@
 			<string>Agoda, 17 July 2026</string>
 			<key>CertificateImageName</key>
 			<string>certificate_02</string>
+		</dict>
+	</array>
+	<key>Places</key>
+	<array>
+		<dict>
+			<key>PlaceName</key>
+			<string>Mount Fuji</string>
+			<key>Country</key>
+			<string>Japan</string>
+			<key>PlaceDescription</key>
+			<string>Japan's highest mountain and iconic volcano.</string>
+			<key>Latitude</key>
+			<real>35.3606</real>
+			<key>Longitude</key>
+			<real>138.7274</real>
+		</dict>
+		<dict>
+			<key>PlaceName</key>
+			<string>Fushimi Inari Taisha</string>
+			<key>Country</key>
+			<string>Japan</string>
+			<key>PlaceDescription</key>
+			<string>Shrine in Kyoto famous for thousands of red torii gates.</string>
+			<key>Latitude</key>
+			<real>34.9671</real>
+			<key>Longitude</key>
+			<real>135.7727</real>
+		</dict>
+		<dict>
+			<key>PlaceName</key>
+			<string>Gyeongbokgung Palace</string>
+			<key>Country</key>
+			<string>South Korea</string>
+			<key>PlaceDescription</key>
+			<string>The main royal palace of the Joseon dynasty in Seoul.</string>
+			<key>Latitude</key>
+			<real>37.5796</real>
+			<key>Longitude</key>
+			<real>126.977</real>
+		</dict>
+		<dict>
+			<key>PlaceName</key>
+			<string>Lofoten Islands</string>
+			<key>Country</key>
+			<string>Norway</string>
+			<key>PlaceDescription</key>
+			<string>Arctic islands with dramatic peaks and northern lights.</string>
+			<key>Latitude</key>
+			<real>68.2342</real>
+			<key>Longitude</key>
+			<real>13.6119</real>
+		</dict>
+		<dict>
+			<key>PlaceName</key>
+			<string>Geirangerfjord</string>
+			<key>Country</key>
+			<string>Norway</string>
+			<key>PlaceDescription</key>
+			<string>UNESCO-listed fjord with steep cliffs and waterfalls.</string>
+			<key>Latitude</key>
+			<real>62.1049</real>
+			<key>Longitude</key>
+			<real>7.2058</real>
 		</dict>
 	</array>
 </dict>

@@ -189,7 +189,7 @@
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuTableViewCell" id="mn-cell" customClass="MenuTableViewCell" customModule="iOS_App3" customModuleProvider="target">
-                                <rect key="frame" x="20" y="102" width="353" height="73.666664123535156"/>
+                                <rect key="frame" x="20" y="54" width="353" height="73.666664123535156"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mn-cell" id="mn-ccv">
                                     <rect key="frame" x="0.0" y="0.0" width="353" height="73.666664123535156"/>
@@ -280,6 +280,7 @@
                         <segue destination="ab-vc" kind="show" identifier="showAbout" id="sg-about"/>
                         <segue destination="ac-vc" kind="show" identifier="showActivities" id="sg-activities"/>
                         <segue destination="ce-vc" kind="show" identifier="showCertificates" id="sg-certificates"/>
+                        <segue destination="mp-vc" kind="show" identifier="showPlaces" id="sg-places"/>
                         <segue destination="st-vc" kind="show" identifier="showStatement" id="sg-statement"/>
                     </connections>
                 </tableViewController>
@@ -540,7 +541,7 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ProjectCardCell" id="ac-cell" customClass="ProjectCardCell" customModule="iOS_App3" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="142" width="393" height="421"/>
+                                        <rect key="frame" x="0.0" y="58" width="393" height="421"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ac-cell" id="ac-ccv">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="421"/>
@@ -858,7 +859,7 @@ Add projects in PortfolioData.plist → Projects.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ce-col">
-                                <rect key="frame" x="0.0" y="209" width="393" height="507"/>
+                                <rect key="frame" x="0.0" y="188" width="393" height="528"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ce-flow">
                                     <size key="itemSize" width="393" height="610"/>
@@ -868,7 +869,7 @@ Add projects in PortfolioData.plist → Projects.</string>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CertificateCollectionViewCell" id="ce-cell" customClass="CertificateCollectionViewCell" customModule="iOS_App3" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="-51.666666666666664" width="393" height="610"/>
+                                        <rect key="frame" x="0.0" y="-41" width="393" height="610"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ce-ccv">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="610"/>
@@ -1093,6 +1094,76 @@ Add certificates in PortfolioData.plist → Certificates.</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="st-fr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="343" y="735"/>
+        </scene>
+        <!--Places Map View Controller-->
+        <scene sceneID="mp-scene">
+            <objects>
+                <viewController id="mp-vc" customClass="PlacesMapViewController" customModule="iOS_App3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mp-root">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mp-map">
+                                <rect key="frame" x="0.0" y="103" width="393" height="420"/>
+                            </mapView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="60" sectionHeaderHeight="0.0" sectionFooterHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="mp-table">
+                                <rect key="frame" x="0.0" y="523" width="393" height="329"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlaceCell" textLabel="mp-cell-t" detailTextLabel="mp-cell-d" style="IBUITableViewCellStyleSubtitle" id="mp-cell">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="60"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mp-cell" id="mp-cell-cv">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Place" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mp-cell-t">
+                                                    <rect key="frame" x="20" y="10" width="353" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <color key="textColor" red="0.090196078431372548" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mp-cell-d">
+                                                    <rect key="frame" x="20" y="33" width="353" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="mp-vc" id="mp-ds"/>
+                                    <outlet property="delegate" destination="mp-vc" id="mp-dl"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mp-safe"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mp-map" firstAttribute="top" secondItem="mp-safe" secondAttribute="top" id="mp-c1"/>
+                            <constraint firstItem="mp-map" firstAttribute="leading" secondItem="mp-root" secondAttribute="leading" id="mp-c2"/>
+                            <constraint firstItem="mp-map" firstAttribute="trailing" secondItem="mp-root" secondAttribute="trailing" id="mp-c3"/>
+                            <constraint firstItem="mp-map" firstAttribute="height" secondItem="mp-root" secondAttribute="height" multiplier="0.5" id="mp-c4"/>
+                            <constraint firstItem="mp-table" firstAttribute="top" secondItem="mp-map" secondAttribute="bottom" id="mp-c5"/>
+                            <constraint firstItem="mp-table" firstAttribute="leading" secondItem="mp-root" secondAttribute="leading" id="mp-c6"/>
+                            <constraint firstItem="mp-table" firstAttribute="trailing" secondItem="mp-root" secondAttribute="trailing" id="mp-c7"/>
+                            <constraint firstItem="mp-table" firstAttribute="bottom" secondItem="mp-root" secondAttribute="bottom" id="mp-c8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Places of Interest" largeTitleDisplayMode="never" id="mp-ni"/>
+                    <connections>
+                        <outlet property="mapView" destination="mp-map" id="mp-o1"/>
+                        <outlet property="tableView" destination="mp-table" id="mp-o2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mp-fr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2100" y="1000"/>
         </scene>
     </scenes>
     <resources>

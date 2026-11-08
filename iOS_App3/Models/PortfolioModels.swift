@@ -12,12 +12,14 @@ struct PortfolioData: Codable {
     let statementOfPurpose: StatementOfPurpose
     let projects: [Project]
     let certificates: [Certificate]
+    let places: [Place]
 
     enum CodingKeys: String, CodingKey {
         case profile = "Profile"
         case statementOfPurpose = "StatementOfPurpose"
         case projects = "Projects"
         case certificates = "Certificates"
+        case places = "Places"
     }
 
     var visibleProjects: [Project] {
@@ -51,22 +53,10 @@ struct Profile: Codable {
 }
 
 struct StatementOfPurpose: Codable {
-    let eyebrow: String
-    let mainTitle: String
-    let subtitle: String
-    let introduction: String
     let sections: [Section]
-    let closingStatement: String
-    let closingNote: String
 
     enum CodingKeys: String, CodingKey {
-        case eyebrow = "Eyebrow"
-        case mainTitle = "MainTitle"
-        case subtitle = "Subtitle"
-        case introduction = "Introduction"
         case sections = "Sections"
-        case closingStatement = "ClosingStatement"
-        case closingNote = "ClosingNote"
     }
 
     struct Section: Codable {
@@ -120,5 +110,21 @@ struct Certificate: Codable {
         case name = "CertificateName"
         case description = "CertificateDescription"
         case imageName = "CertificateImageName"
+    }
+}
+
+struct Place: Codable {
+    let name: String
+    let country: String
+    let description: String
+    let latitude: Double
+    let longitude: Double
+
+    enum CodingKeys: String, CodingKey {
+        case name = "PlaceName"
+        case country = "Country"
+        case description = "PlaceDescription"
+        case latitude = "Latitude"
+        case longitude = "Longitude"
     }
 }

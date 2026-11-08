@@ -67,13 +67,7 @@ class StatementViewController: UIViewController, WKNavigationDelegate {
             """
         }
 
-        html = html.replacingOccurrences(of: "{{EYEBROW}}", with: escape(statement.eyebrow))
-        html = html.replacingOccurrences(of: "{{TITLE}}", with: escape(statement.mainTitle))
-        html = html.replacingOccurrences(of: "{{SUBTITLE}}", with: escape(statement.subtitle))
-        html = html.replacingOccurrences(of: "{{INTRODUCTION}}", with: escape(statement.introduction))
         html = html.replacingOccurrences(of: "{{SECTIONS}}", with: cardsHTML)
-        html = html.replacingOccurrences(of: "{{CLOSING}}", with: escape(statement.closingStatement))
-        html = html.replacingOccurrences(of: "{{CLOSING_NOTE}}", with: escape(statement.closingNote))
         return html
     }
 
